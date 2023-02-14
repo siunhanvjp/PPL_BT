@@ -1,4 +1,4 @@
-# Generated from main/mt22/parser/BKIT.g4 by ANTLR 4.9.2
+# Generated from c:\Users\Admin\Desktop\PPL\exercise\src\main\mt22\parser\BKOOL.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -11,15 +11,15 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\b")
         buf.write("\7\4\2\t\2\3\2\3\2\3\2\2\2\3\2\2\2\2\5\2\4\3\2\2\2\4\5")
         buf.write("\7\2\2\3\5\3\3\2\2\2\2")
         return buf.getvalue()
 
 
-class BKITParser ( Parser ):
+class BKOOLParser ( Parser ):
 
-    grammarFileName = "BKIT.g4"
+    grammarFileName = "BKOOL.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -29,8 +29,8 @@ class BKITParser ( Parser ):
 
     literalNames = [  ]
 
-    symbolicNames = [ "<INVALID>", "IP_ADDR", "WS", "ERROR_CHAR", "UNCLOSE_STRING", 
-                      "ILLEGAL_ESCAPE" ]
+    symbolicNames = [ "<INVALID>", "IP_ADDR", "STRING", "WS", "ERROR_CHAR", 
+                      "UNCLOSE_STRING", "ILLEGAL_ESCAPE" ]
 
     RULE_program = 0
 
@@ -38,10 +38,11 @@ class BKITParser ( Parser ):
 
     EOF = Token.EOF
     IP_ADDR=1
-    WS=2
-    ERROR_CHAR=3
-    UNCLOSE_STRING=4
-    ILLEGAL_ESCAPE=5
+    STRING=2
+    WS=3
+    ERROR_CHAR=4
+    UNCLOSE_STRING=5
+    ILLEGAL_ESCAPE=6
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -60,28 +61,22 @@ class BKITParser ( Parser ):
             self.parser = parser
 
         def EOF(self):
-            return self.getToken(BKITParser.EOF, 0)
+            return self.getToken(BKOOLParser.EOF, 0)
 
         def getRuleIndex(self):
-            return BKITParser.RULE_program
-
-        def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitProgram" ):
-                return visitor.visitProgram(self)
-            else:
-                return visitor.visitChildren(self)
+            return BKOOLParser.RULE_program
 
 
 
 
     def program(self):
 
-        localctx = BKITParser.ProgramContext(self, self._ctx, self.state)
+        localctx = BKOOLParser.ProgramContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_program)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 2
-            self.match(BKITParser.EOF)
+            self.match(BKOOLParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)

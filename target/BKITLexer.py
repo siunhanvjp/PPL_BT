@@ -1,4 +1,4 @@
-# Generated from main/mt22/parser/BKIT.g4 by ANTLR 4.11.1
+# Generated from main/mt22/parser/BKIT.g4 by ANTLR 4.9.2
 from antlr4 import *
 from io import StringIO
 import sys
@@ -11,23 +11,31 @@ else:
 from lexererr import *
 
 
+
 def serializedATN():
-    return [
-        4,0,5,42,6,-1,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,1,
-        0,1,0,1,0,3,0,17,8,0,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,
-        4,2,30,8,2,11,2,12,2,31,1,2,1,2,1,3,1,3,1,3,1,4,1,4,1,5,1,5,0,0,
-        6,1,0,3,1,5,2,7,3,9,4,11,5,1,0,3,1,0,49,57,1,0,48,57,3,0,9,10,13,
-        13,32,32,43,0,3,1,0,0,0,0,5,1,0,0,0,0,7,1,0,0,0,0,9,1,0,0,0,0,11,
-        1,0,0,0,1,16,1,0,0,0,3,20,1,0,0,0,5,29,1,0,0,0,7,35,1,0,0,0,9,38,
-        1,0,0,0,11,40,1,0,0,0,13,14,7,0,0,0,14,17,7,1,0,0,15,17,7,0,0,0,
-        16,13,1,0,0,0,16,15,1,0,0,0,16,17,1,0,0,0,17,18,1,0,0,0,18,19,7,
-        1,0,0,19,2,1,0,0,0,20,21,3,1,0,0,21,22,5,46,0,0,22,23,3,1,0,0,23,
-        24,5,46,0,0,24,25,3,1,0,0,25,26,5,46,0,0,26,27,3,1,0,0,27,4,1,0,
-        0,0,28,30,7,2,0,0,29,28,1,0,0,0,30,31,1,0,0,0,31,29,1,0,0,0,31,32,
-        1,0,0,0,32,33,1,0,0,0,33,34,6,2,0,0,34,6,1,0,0,0,35,36,9,0,0,0,36,
-        37,6,3,1,0,37,8,1,0,0,0,38,39,9,0,0,0,39,10,1,0,0,0,40,41,9,0,0,
-        0,41,12,1,0,0,0,3,0,16,31,2,6,0,0,1,3,0
-    ]
+    with StringIO() as buf:
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\2\7")
+        buf.write("\66\b\1\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t")
+        buf.write("\7\4\b\t\b\4\t\t\t\3\2\3\2\3\2\3\2\3\2\5\2\31\n\2\3\2")
+        buf.write("\3\2\3\3\3\3\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3")
+        buf.write("\6\6\6*\n\6\r\6\16\6+\3\6\3\6\3\7\3\7\3\7\3\b\3\b\3\t")
+        buf.write("\3\t\2\2\n\3\2\5\2\7\2\t\3\13\4\r\5\17\6\21\7\3\2\b\3")
+        buf.write("\2\62\67\3\2\63\63\3\2\62;\3\2\63;\3\2c|\5\2\13\f\17\17")
+        buf.write("\"\"\2\66\2\t\3\2\2\2\2\13\3\2\2\2\2\r\3\2\2\2\2\17\3")
+        buf.write("\2\2\2\2\21\3\2\2\2\3\30\3\2\2\2\5\34\3\2\2\2\7\36\3\2")
+        buf.write("\2\2\t \3\2\2\2\13)\3\2\2\2\r/\3\2\2\2\17\62\3\2\2\2\21")
+        buf.write("\64\3\2\2\2\23\24\7\64\2\2\24\31\t\2\2\2\25\26\t\3\2\2")
+        buf.write("\26\31\t\4\2\2\27\31\t\5\2\2\30\23\3\2\2\2\30\25\3\2\2")
+        buf.write("\2\30\27\3\2\2\2\30\31\3\2\2\2\31\32\3\2\2\2\32\33\t\4")
+        buf.write("\2\2\33\4\3\2\2\2\34\35\t\6\2\2\35\6\3\2\2\2\36\37\t\4")
+        buf.write("\2\2\37\b\3\2\2\2 !\5\3\2\2!\"\7\60\2\2\"#\5\3\2\2#$\7")
+        buf.write("\60\2\2$%\5\3\2\2%&\7\60\2\2&\'\5\3\2\2\'\n\3\2\2\2(*")
+        buf.write("\t\7\2\2)(\3\2\2\2*+\3\2\2\2+)\3\2\2\2+,\3\2\2\2,-\3\2")
+        buf.write("\2\2-.\b\6\2\2.\f\3\2\2\2/\60\13\2\2\2\60\61\b\7\3\2\61")
+        buf.write("\16\3\2\2\2\62\63\13\2\2\2\63\20\3\2\2\2\64\65\13\2\2")
+        buf.write("\2\65\22\3\2\2\2\5\2\30+\4\b\2\2\3\7\2")
+        return buf.getvalue()
+
 
 class BKITLexer(Lexer):
 
@@ -51,14 +59,14 @@ class BKITLexer(Lexer):
     symbolicNames = [ "<INVALID>",
             "IP_ADDR", "WS", "ERROR_CHAR", "UNCLOSE_STRING", "ILLEGAL_ESCAPE" ]
 
-    ruleNames = [ "IP", "IP_ADDR", "WS", "ERROR_CHAR", "UNCLOSE_STRING", 
-                  "ILLEGAL_ESCAPE" ]
+    ruleNames = [ "IP", "Letter", "Digit", "IP_ADDR", "WS", "ERROR_CHAR", 
+                  "UNCLOSE_STRING", "ILLEGAL_ESCAPE" ]
 
     grammarFileName = "BKIT.g4"
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.11.1")
+        self.checkVersion("4.9.2")
         self._interp = LexerATNSimulator(self, self.atn, self.decisionsToDFA, PredictionContextCache())
         self._actions = None
         self._predicates = None
@@ -67,7 +75,7 @@ class BKITLexer(Lexer):
     def action(self, localctx:RuleContext, ruleIndex:int, actionIndex:int):
         if self._actions is None:
             actions = dict()
-            actions[3] = self.ERROR_CHAR_action 
+            actions[5] = self.ERROR_CHAR_action 
             self._actions = actions
         action = self._actions.get(ruleIndex, None)
         if action is not None:

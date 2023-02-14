@@ -6,6 +6,10 @@ if not './main/mt22/parser/' in sys.path:
     sys.path.append('./main/mt22/parser/')
 if os.path.isdir('../target/main/mt22/parser') and not '../target/main/mt22/parser/' in sys.path:
     sys.path.append('../target/main/mt22/parser/')
+    
+# from BKOOLLexer import BKOOLLexer
+# from BKOOLParser import BKOOLParser
+
 from BKITLexer import BKITLexer
 from BKITParser import BKITParser
 from lexererr import *
@@ -14,8 +18,12 @@ import subprocess
 JASMIN_JAR = "./external/jasmin.jar"
 TEST_DIR = "./test/testcases/"
 SOL_DIR = "./test/solutions/"
+
 Lexer = BKITLexer
 Parser = BKITParser
+
+# Lexer = BKOOLLexer
+# Parser = BKOOLParser
 
 
 class TestUtil:

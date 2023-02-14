@@ -10,11 +10,12 @@ ANTLR_JAR = os.environ.get('ANTLR_JAR')
 TARGET_DIR = '../target'
 GENERATE_DIR = 'main/mt22/parser'
 
-
 def main(argv):
     if len(argv) < 1:
         printUsage()
     elif argv[0] == 'gen':
+        # subprocess.run(["java", "-jar", ANTLR_JAR, "-o", "../target",
+        #                "-no-listener", "-visitor", "main/mt22/parser/BKOOL.g4"])
         subprocess.run(["java", "-jar", ANTLR_JAR, "-o", "../target",
                        "-no-listener", "-visitor", "main/mt22/parser/BKIT.g4"])
     elif argv[0] == 'clean':
@@ -22,6 +23,8 @@ def main(argv):
 
     elif argv[0] == 'test':
         if not os.path.isdir(TARGET_DIR + "/" + GENERATE_DIR):
+            # subprocess.run(["java", "-jar", ANTLR_JAR, "-o", GENERATE_DIR,
+            #                "-no-listener", "-visitor", "main/mt22/parser/BKOOL.g4"])
             subprocess.run(["java", "-jar", ANTLR_JAR, "-o", GENERATE_DIR,
                            "-no-listener", "-visitor", "main/mt22/parser/BKIT.g4"])
         if not (TARGET_DIR + "/" + GENERATE_DIR) in sys.path:

@@ -6,4 +6,4 @@ class LexerSuite(unittest.TestCase):
 
     def test_lowercase_identifier(self):
         """test identifiers"""
-        self.assertTrue(TestLexer.test("192.168.0.1", "Error Token 1", 101))
+        self.assertTrue(TestLexer.test("12.171.249.251", "12.171.249.251,<EOF>", 101))
