@@ -1,4 +1,4 @@
-# Generated from c:\Users\Admin\Desktop\PPL\exercise\src\main\mt22\parser\BKOOL.g4 by ANTLR 4.9.2
+# Generated from main/mt22/parser/BKOOL.g4 by ANTLR 4.9.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -176,6 +176,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_program
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitProgram" ):
+                return visitor.visitProgram(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -219,6 +225,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_decl
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDecl" ):
+                return visitor.visitDecl(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -300,6 +312,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_vardecl
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitVardecl" ):
+                return visitor.visitVardecl(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -343,6 +361,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_idlist
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitIdlist" ):
+                return visitor.visitIdlist(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -406,6 +430,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_funcdecl
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFuncdecl" ):
+                return visitor.visitFuncdecl(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -452,6 +482,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_paradecl
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParadecl" ):
+                return visitor.visitParadecl(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -489,6 +525,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_paralist
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParalist" ):
+                return visitor.visitParalist(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -542,6 +584,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_paralist1
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParalist1" ):
+                return visitor.visitParalist1(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -598,6 +646,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_para
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPara" ):
+                return visitor.visitPara(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -639,6 +693,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_paralistid
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitParalistid" ):
+                return visitor.visitParalistid(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -697,6 +757,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_body
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBody" ):
+                return visitor.visitBody(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -742,6 +808,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_bodylist
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBodylist" ):
+                return visitor.visitBodylist(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -814,6 +886,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_stmt
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitStmt" ):
+                return visitor.visitStmt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -873,6 +951,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_asm
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAsm" ):
+                return visitor.visitAsm(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -920,6 +1004,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_call
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCall" ):
+                return visitor.visitCall(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -959,6 +1049,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_exprlist
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprlist" ):
+                return visitor.visitExprlist(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1013,6 +1109,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_exprlist1
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExprlist1" ):
+                return visitor.visitExprlist1(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1064,6 +1166,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_return_
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitReturn_" ):
+                return visitor.visitReturn_(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1106,6 +1214,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_expr
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpr" ):
+                return visitor.visitExpr(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1163,6 +1277,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_expr1
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpr1" ):
+                return visitor.visitExpr1(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1224,6 +1344,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_expr2
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpr2" ):
+                return visitor.visitExpr2(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 
@@ -1309,6 +1435,12 @@ class BKOOLParser ( Parser ):
         def getRuleIndex(self):
             return BKOOLParser.RULE_expr3
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpr3" ):
+                return visitor.visitExpr3(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
@@ -1379,6 +1511,12 @@ class BKOOLParser ( Parser ):
 
         def getRuleIndex(self):
             return BKOOLParser.RULE_typ
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTyp" ):
+                return visitor.visitTyp(self)
+            else:
+                return visitor.visitChildren(self)
 
 
 

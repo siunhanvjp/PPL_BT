@@ -1,4 +1,4 @@
-# Generated from c:\Users\Admin\Desktop\PPL\exercise\src\main\mt22\parser\BKOOL.g4 by ANTLR 4.9.2
+# Generated from main/mt22/parser/BKOOL.g4 by ANTLR 4.9.2
 from antlr4 import *
 from io import StringIO
 import sys

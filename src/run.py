@@ -14,19 +14,19 @@ def main(argv):
     if len(argv) < 1:
         printUsage()
     elif argv[0] == 'gen':
-        # subprocess.run(["java", "-jar", ANTLR_JAR, "-o", "../target",
-        #                "-no-listener", "-visitor", "main/mt22/parser/BKOOL.g4"])
         subprocess.run(["java", "-jar", ANTLR_JAR, "-o", "../target",
-                       "-no-listener", "-visitor", "main/mt22/parser/BKIT.g4"])
+                       "-no-listener", "-visitor", "main/mt22/parser/BKOOL.g4"])
+        # subprocess.run(["java", "-jar", ANTLR_JAR, "-o", "../target",
+        #                "-no-listener", "-visitor", "main/mt22/parser/BKIT.g4"])
     elif argv[0] == 'clean':
         subprocess.run(["rm", "-rf", TARGET_DIR + "/*"])
 
     elif argv[0] == 'test':
         if not os.path.isdir(TARGET_DIR + "/" + GENERATE_DIR):
-            # subprocess.run(["java", "-jar", ANTLR_JAR, "-o", GENERATE_DIR,
-            #                "-no-listener", "-visitor", "main/mt22/parser/BKOOL.g4"])
             subprocess.run(["java", "-jar", ANTLR_JAR, "-o", GENERATE_DIR,
-                           "-no-listener", "-visitor", "main/mt22/parser/BKIT.g4"])
+                           "-no-listener", "-visitor", "main/mt22/parser/BKOOL.g4"])
+            # subprocess.run(["java", "-jar", ANTLR_JAR, "-o", GENERATE_DIR,
+            #                "-no-listener", "-visitor", "main/mt22/parser/BKIT.g4"])
         if not (TARGET_DIR + "/" + GENERATE_DIR) in sys.path:
             sys.path.append(TARGET_DIR + "/" + GENERATE_DIR)
         if len(argv) < 2:
